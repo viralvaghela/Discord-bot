@@ -11,7 +11,7 @@ public class MainClass {
         final String token = "TOKEN";
         final DiscordClient client = DiscordClient.create(token);
         final GatewayDiscordClient gateway = client.login().block();
-        String badWords[] = {"fuck", "mc", "bc", "bitch"};
+        String badWords[] = {"fuck", "mc", "bc", "bitch","chutiya","bsdk"};
         gateway.on(MessageCreateEvent.class).subscribe(event -> {
             final Message message = event.getMessage();
             final MessageChannel channel = message.getChannel().block();
